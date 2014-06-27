@@ -34,14 +34,12 @@ else
     bower_command="bower"
 fi
 
-bower_command install \
+set +e
+$bower_command install \
     --config.interactive=false \
     --config.storage.packages=$BOWER_STORAGE__CACHE/.bower-cache \
     --config.storage.registry=$BOWER_STORAGE__CACHE/.bower-registry \
     --config.tmp=$BOWER_STORAGE__CACHE/.bower-tmp
-
-set +e
-$bower_command
 result="$?"
 set -e
 
