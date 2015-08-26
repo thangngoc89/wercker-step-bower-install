@@ -39,7 +39,8 @@ $bower_command install \
     --config.interactive=false \
     --config.storage.packages=$BOWER_STORAGE__CACHE/.bower-cache \
     --config.storage.registry=$BOWER_STORAGE__CACHE/.bower-registry \
-    --config.tmp=$BOWER_STORAGE__CACHE/.bower-tmp
+    --config.tmp=$BOWER_STORAGE__CACHE/.bower-tmp \
+    --allow-root
 result="$?"
 set -e
 
