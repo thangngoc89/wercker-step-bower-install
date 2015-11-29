@@ -18,9 +18,9 @@ if ! type bower &> /dev/null ; then
             debug "npm version: $(npm --version)"
 
             info "installing bower"
-            npm config set ca "" --silent
-            sudo npm install npm -g --silent
-            sudo npm install -g --silent bower
+            #npm config set ca "" --silent
+            #sudo npm install npm -g --silent
+            sudo npm install -g bower
             bower_command="bower"
         fi
     else
