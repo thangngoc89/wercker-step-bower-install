@@ -1,7 +1,0 @@
-box: ubuntu
-build:
-  steps:
-    - script:
-        name: nothing here
-        code: |
-          echo "Dummy wercker file"
